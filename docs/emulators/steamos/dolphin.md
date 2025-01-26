@@ -1274,7 +1274,7 @@ Here's how to **resolve the error** and remove the Nunchuk:
 3. Under `Wii Remotes`, select `Real Wii Remote` under the drop-down list next to `Wii Remote 1` and check `Continuous Scanning` at the bottom of the screen
     1. <img src="https://user-images.githubusercontent.com/108900299/211222098-c34d4652-4efc-4c40-b7bc-56c18a23ad7c.png" height="300">
 4. Return to Game Mode
-5. Open a Wii game, and press `1` and `2` on the Wiimote at the same time
+5. Open a Wii game, and press `1` and `2` on the Wiimote at the same time (For Wii Motion Plus Wii Remotes, press the SYNC button on the back instead).
 
 !!! danger
 
