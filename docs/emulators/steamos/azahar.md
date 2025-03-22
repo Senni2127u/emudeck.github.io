@@ -774,7 +774,7 @@ upright_screen\default=true
 
 3. Insert your SD Card back into the Nintendo 3DS and power it on, launch the Setup Tool, instructions will vary depending on your chosen file.
 
-* If you used the .3ds, you need to launch it via the Homebrew Launcher.
+* If you used the .3dsx, you need to launch it via the Homebrew Launcher.
 * If you used the .cia, you need to install it with FBI.
 
 4. Press A to start the setup tool, you will be given a local IP address once completed.
