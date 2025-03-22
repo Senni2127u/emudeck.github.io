@@ -793,17 +793,21 @@ You should now have your system files ready to go.
 * Do note this process may make you unable to access certain features of Pretendo Network, such as Miiverse.
 * This process requires atleast Old 3DS system software files, if you have not already done so, you can do so with the instructions in the [How To Set Up System Files](#how_to_setup_system_files) tab.
 
-1. Download ThreeSD from the respective GitHub page and for your OS: https://github.com/zhaowenlan1779/threeSD/releases/tag/v0.5.4
+1. Download ThreeSD from the respective GitHub page and for your OS: [https://github.com/zhaowenlan1779/threeSD/releases](https://github.com/zhaowenlan1779/threeSD/releases)
 
 2. Insert your 3DS SD Card into your computer and in the dist folder of the ThreeSD zip, copy the threeSDDumper.gm9 into your gm9/scripts folder on your SD Card. Eject the SD Card and put it back into your Nintendo 3DS.
 
 3. Launch GodMode9 by holding the Start button then powering the Nintendo 3DS on.
 
-4.  Press the Home Button, Scripts, and then execute the threeSDDumper script. Once it is done, power off your 3DS and put the SD Card back into your PC and launch the threeSD executable.
+4. Press the Home Button, Scripts, and then execute the threeSDDumper script. Once it is done, power off your 3DS and put the SD Card back into your PC and launch the threeSD executable.
 
-5. After that click your SD card and then check everything off but "Ungrouped", then transfer the data. This data gets saved to the CITRA user save directory, not Azahar, so you need to locate this directory and put those files into the Azahar directory instead.
+5. After that click your SD card, uncheck everything but Ungrouped, and transfer the data.
 
-* for SteamOS and most Linux distros, it's located in `Home/.local/share`, but you can also locate it by launching Azahar and going to File > Open Azahar Directory, then go back one folder.
+* This data gets saved to the CITRA user save directory, not Azahar, so you need to locate this directory.
+
+* for SteamOS and most Linux distros, it's located in `Home/.local/share`, but you can also locate it by launching Azahar and going to File > Open Azahar Folder, then go back one folder.
+  
+* Check where your SDMC folder is located, usually, they will be located in Azahar's folder, move the two newly created folders into that same directory displayed in Emulation > Configure > System > Storage.
 
 6. Next, you need to link your NNID, make sure you have your ID, password, and email ready.
 
