@@ -1,32 +1,30 @@
-# Citra is a Nintendo 3DS Emulator.
+# Azahar is a Nintendo 3DS Emulator.
 
-Website: [https://citra-emu.org/](https://citra-emu.org/)
+Website: [https://azahar-emu.org/](https://azahar-emu.org/)
 
-GiHhub: [https://github.com/citra-emu/citra](https://github.com/citra-emu/citra)
-
-Compatibility List: [https://citra-emu.org/game/](https://citra-emu.org/game/)
+Github: [https://github.com/azahar-emu/azahar/](https://github.com/azahar-emu/azahar)
 
 ***
 
-## Citra Table of Contents
+## Azahar Table of Contents
 
-1. [Getting Started with Citra](#getting-started-with-citra)
-    - [Configuration](#citra-configuration)
-    - [Citra Folder Locations](#citra-folder-locations)
-    - [How to Update Citra](#how-to-update-citra)
-    - [How to Launch Citra in Desktop Mode](#how-to-launch-citra-in-desktop-mode)
-    - [File Formats](#citra-file-formats)
+1. [Getting Started with Azahar](#getting-started-with-azahar)
+    - [Configuration](#azahar-configuration)
+    - [Azahar Folder Locations](#azahar-folder-locations)
+    - [How to Update Azahar](#how-to-update-azahar)
+    - [How to Launch Azahar in Desktop Mode](#how-to-launch-azahar-in-desktop-mode)
+    - [File Formats](#azahar-file-formats)
     - [How to Manage DLC and Updates](#how-to-manage-dlc-and-updates)
-    - [Hotkeys](#citra-hotkeys)
-2. [Common Issues](#citra-common-issues)
+    - [Hotkeys](#azahar-hotkeys)
+2. [Common Issues](#azahar-common-issues)
     - [Why did my game suddenly stop working?](#why-did-my-game-suddenly-stop-working)
-3. [Citra Tips and Tricks](#citra-tips-and-tricks)
+3. [Azahar Tips and Tricks](#azahar-tips-and-tricks)
     - [How to Configure Gyro](#how-to-configure-gyro)
     - [How to Configure Gyro With External Controllers](#how-to-configure-gyro-with-external-controllers)
     - [How to Optimize Performance (Power Tools)](#how-to-optimize-performance-power-tools)
     - [How to Install Custom Textures](#how-to-install-custom-textures)
     - [How to Use Cheats](#how-to-use-cheats)
-    - [How to Roll Back Citra to an Older Version](#how-to-roll-back-citra-to-an-older-version)
+    - [How to Roll Back Azahar to an Older Version](#how-to-roll-back-azahar-to-an-older-version)
     - [How to Set Up PKHeX](../../community-creations/steamos/tools-and-guides.md#how-to-set-up-pkhex)
     - [How to Install the Universal Pokemon Randomizer](../../community-creations/steamos/tools-and-guides.md#how-to-install-the-universal-pokemon-randomizer)
     - [How to Configure Language Settings](#how-to-configure-language-settings)
@@ -36,40 +34,41 @@ Compatibility List: [https://citra-emu.org/game/](https://citra-emu.org/game/)
     - [How to Configure Bottom Screen With PiP and Opacity](#how-to-configure-bottom-screen-with-pip-and-opacity)
     - [How to Configure Bottom Screen as PiP in the Top Right Corner](#how-to-configure-bottom-screen-as-pip-in-the-top-right-corner)
 
+5. [Online Features](#azahar-online-features)
+    - [How to Set Up System Files](#how-to-setup-system-files)
+    - [How to Set Up your Nintendo Network ID](#how-to-setup-your-nintendo-network-id)
+    - [How to Set Up Pretendo Network](#how-to-setup-pretendo-network)
 
 ***
 
-## Getting Started with Citra
-[Back to the Top](#citra-table-of-contents)
+## Getting Started with Azahar
+[Back to the Top](#azahar-table-of-contents)
 
-Citra is a fairly straight-forward emulator to set up. Place your ROMs in `Emulation/roms/n3ds` or `Emulation/roms/3ds`. No additional setup is required if you are using decrypted ROMs. Read the [Configuration](#citra-configuration) section to learn more about Citra and its folder locations. The [Configuration](#citra-configuration) section covers where to place your `aes_keys.txt` if you are using encrypted ROMs. 
+Azahar is a fairly straight-forward emulator to set up. Place your ROMs in `Emulation/roms/n3ds` or `Emulation/roms/3ds`. Read the [Configuration](#azahar-configuration) section to learn more about Azahar and its folder locations. The [Configuration](#azahar-configuration).
 
-To launch your ROMs in game mode, use Steam ROM Manager and use one of the following parsers to play your Citra ROMs:
+To launch your ROMs in game mode, use Steam ROM Manager and use one of the following parsers to play your Azahar ROMs:
 
 * `EmulationStation-DE`
-* `Nintendo 3DS - Citra` 
+* `Nintendo 3DS - Azahar` 
 * `Emulators`
 
 
 ***
 
-### Citra Configuration
-[Back to the Top](#citra-table-of-contents)
+### Azahar Configuration
+[Back to the Top](#azahar-table-of-contents)
 
-* Type of Emulator: Flatpak
+* Type of Emulator: AppImage
 * Config Location: 
-    * `/home/deck/.config/citra-emu`
-    * `/home/deck/.local/share/citra-emu`
+    * `/home/deck/.config/azahar-emu`
+    * `/home/deck/.local/share/azahar-emu`
 * ROM Location: `Emulation/roms/3ds` or `Emulation/roms/n3ds`
-* `aes_keys.txt` location: `/home/deck/.local/share/citra-emu/sysdata` 
-    * _Only necessary if the 3DS ROM is encrypted_
-    * If the `sysdata` folder does not exist, create the folder
 * Saves Location:
-    * Symlink: `Emulation/saves/citra/saves`
-    * Target: `/Emulation/storage/citra/sdmc`
+    * Symlink: `Emulation/saves/azahar/saves`
+    * Target: `/Emulation/storage/azahar/sdmc`
 * Save States Location:
-    * Symlink: `Emulation/saves/citra/states/`
-    * Target: `/home/deck/.local/share/citra-emu/states`
+    * Symlink: `Emulation/saves/azahar/states/`
+    * Target: `/home/deck/.local/share/azahar-emu/states`
 
 **Note:** `~/.config` and `~/.local` are hidden folders by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders.
 
@@ -79,8 +78,8 @@ To launch your ROMs in game mode, use Steam ROM Manager and use one of the follo
 
 ***
 
-### Citra Folder Locations
-[Back to the Top](#citra-table-of-contents)
+### Azahar Folder Locations
+[Back to the Top](#azahar-table-of-contents)
 
 These file locations apply regardless of where you chose to install EmuDeck (to your internal SSD, to your SD Card, or elsewhere). Some emulator configuration files will be located on the internal SSD as listed below. 
 
@@ -90,25 +89,25 @@ Paths beginning with `Emulation/..` correspond to your EmuDeck install location.
 
 **Note:** Folders with a `.` (`.var`, `.local`, `.config`, etc.) at the beginning are hidden by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders.
 
-`/home/deck/.config/citra-emu`
+`/home/deck/.config/azahar-emu`
 
 ```
-citra-emu/
+azahar-emu/
 ├── custom
 ├── qt-config.ini
 └── qt-config.ini.bak
 ```
 
-`/home/deck/.local/share/citra-emu`
+`/home/deck/.local/share/azahar-emu`
 
 ```
-citra-emu/
+azahar-emu/
 ├── cheats
 ├── load
 │   └── textures
 ├── log
-│   ├── citra_log.txt
-│   └── citra_log.txt.old.txt
+│   ├── azahar_log.txt
+│   └── azahar_log.txt.old.txt
 ├── shaders
 │   └── vulkan
 ├── states
@@ -117,11 +116,11 @@ citra-emu/
 └── textures
 ```
 
-`Emulation/storage/citra`
+`Emulation/storage/azahar`
 
 ```
-citra/
-├── cheats -> /home/deck/.local/share/citra-emu/cheats
+azahar/
+├── cheats -> /home/deck/.local/share/azahar-emu/cheats
 ├── nand
 │   └── data
 │       └── 00000000000000000000000000000000
@@ -137,41 +136,39 @@ citra/
 │       └── 00000000000000000000000000000000
 │           └── 00000000000000000000000000000000
 │               └── title
-└── textures -> /home/deck/.local/share/citra-emu/load/textures
+└── textures -> /home/deck/.local/share/azahar-emu/load/textures
 ```
 
 
 ***
 
-### How to Update Citra
-[Back to the Top](#citra-table-of-contents)
+### How to Update Azahar
+[Back to the Top](#azahar-table-of-contents)
 
-**How to Update Citra**
+**How to Update Azahar**
 
 * Through the `Update your Emulators & Tools` section on the `Manage Emulators` page in the `EmuDeck` application
-* Manual file replacement of `citra-qt.AppImage` 
+* Manual file replacement of `azahar.AppImage` 
     * Refer to [How to Swap Out AppImages and Binaries](../../../file-management/steamos/file-management.md#how-to-swap-out-appimages-and-binaries) for instructions
-* Through `binupdate.sh` in `Emulation/tools/binupdate`, double click to launch
+* Through the emulator GUI itself by launching the AppImage.
 
 
 ***
 
-### How to Launch Citra in Desktop Mode
+### How to Launch Azahar in Desktop Mode
 
-**How to Launch Citra in Desktop Mode**
+**How to Launch Azahar in Desktop Mode**
 
-* Launch `Citra` from the Applications Launcher (Steam Deck icon in the bottom left of the taskbar)
-* Launch the script from `Emulation/tools/launchers`, `citra.sh`
+* Launch `Azahar` from the Applications Launcher (Steam Deck icon in the bottom left of the taskbar)
+* Launch the script from `Emulation/tools/launchers`, `azahar.sh`
 * Launch the emulator from `Steam` after adding it via the `Emulators` parser in `Steam ROM Manager`
 
 
 ***
 
-### Citra File Formats
-[Back to the Top](#citra-table-of-contents)
+### Azahar File Formats
+[Back to the Top](#azahar-table-of-contents)
 
-* .3ds 
-* .3dsx 
 * .app 
 * .axf 
 * .cci 
@@ -180,30 +177,30 @@ citra/
 
 **IMPORTANT:** 
 
-* `.cia` can only be used if you install it through Citra. **Do not** place your `.cia` ROMs in either the `Emulation/roms/3ds` or the `Emulation/roms/n3ds` folders. The .cia file format **is not** compatible with Steam ROM Manager and EmulationStation-DE.
-
+* `.cia` can only be used if you install it through Azahar. **Do not** place your `.cia` ROMs in either the `Emulation/roms/3ds` or the `Emulation/roms/n3ds` folders. The .cia file format **is not** compatible with Steam ROM Manager and EmulationStation-DE.
+* `.3ds` and `.3dsx` are no longer supported, you will have to change the file extension to `.cci` to use the file with Azahar.
+* Encrypted ROMS are no longer supported, you must decrypt them with GodMode9 in order to use them.
 ***
 
 ### How to Manage DLC and Updates
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
-Read: [https://citra-emu.org/wiki/dumping-updates-and-dlcs/](https://citra-emu.org/wiki/dumping-updates-and-dlcs/) to learn how to properly dump your DLC and update files from your 3DS.
-
-DLC and update files typically are .CIAs, an installable file format through Citra. After installing your DLC or updates, you may discard these files. 
+DLC and update files typically are .CIAs, an installable file format through Azahar. These files need to be decrypted. After installing your DLC or updates, you may discard these files. 
+If you have installed your system files and have your NNID sorted, you can also download your DLC/Updates from the Nintendo EShop.
 
 **How to Install DLC and Updates**
 
-1. In Desktop Mode, open Citra
+1. In Desktop Mode, open Azahar
 2. Click `File` in the top left 
 3. Click `Install CIA...`
 4. Navigate to your DLC or update files
 
 ***
 
-### Citra Hotkeys
-[Back to the Top](#citra-table-of-contents)
+### Azahar Hotkeys
+[Back to the Top](#azahar-table-of-contents)
 
-Citra comes with a Steam Input profile for Hotkeys. When playing Citra ROM shortcuts through Steam, the `EmuDeck - Controller Hotkeys` profile will automatically be applied so you may use the below hotkeys. For more info, see [Emulator Button Combinations Profile](../../controls-and-hotkeys/steamos/hotkeys.md#emulator-button-combinations-profile).
+Azahar comes with a Steam Input profile for Hotkeys. When playing Azahar ROM shortcuts through Steam, the `EmuDeck - Controller Hotkeys` profile will automatically be applied so you may use the below hotkeys. For more info, see [Emulator Button Combinations Profile](../../controls-and-hotkeys/steamos/hotkeys.md#emulator-button-combinations-profile).
 
 When using a frontend (ES-DE, Pegasus, or the emulator itself), the `EmuDeck - Frontend Controller Hotkeys` will automatically be applied. Hold `Start` for a few seconds to switch to the action set required to use the below hotkeys. For more info, see [Emulator Frontends Button Combinations Profile](../../controls-and-hotkeys/steamos/hotkeys.md#emulator-frontends-button-combinations-profile).
 
@@ -218,19 +215,19 @@ When using a frontend (ES-DE, Pegasus, or the emulator itself), the `EmuDeck - F
 
 ***
 
-## Citra Common Issues
-[Back to the Top](#citra-table-of-contents)
+## Azahar Common Issues
+[Back to the Top](#azahar-table-of-contents)
 
 ***
 
 ### Why did my game suddenly stop working? 
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 If your game ever crashes or you exit the game by pressing the `STEAM` button and clicking `Exit Game` instead of using the hotkey (`Quit` on the left trackpad), you may end up corrupting the shader cache. 
 
 To clear the shader cache:
 
-1. In Desktop Mode, open the `/home/deck/.local/share/citra-emu` folder
+1. In Desktop Mode, open the `/home/deck/.local/share/azahar-emu` folder
     * `~/.local` is a hidden folder by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders
 2. Delete the `shaders` folder
 3. Try your game again
@@ -239,22 +236,22 @@ To clear the shader cache:
 
 ***
 
-## Citra Tips and Tricks
-[Back to the Top](#citra-table-of-contents)
+## Azahar Tips and Tricks
+[Back to the Top](#azahar-table-of-contents)
 
 ***
 
 ### How to Configure Gyro
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
-Gyro for Citra requires SteamDeckGyroDSU. SteamDeckGyroDSU can be installed via EmuDeck, or it can be installed manually.
+Gyro for Azahar requires SteamDeckGyroDSU. SteamDeckGyroDSU can be installed via EmuDeck, or it can be installed manually.
 
 Visit [SteamDeckGyroDSU](../../emudeck-application/steamos/emudeck-application-101.md#steamdeckgyrodsu) to learn how to install and utilize SteamDeckGyroDSU. 
 
 ***
 
 ### How to Configure Gyro With External Controllers
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 #### Desktop Mode
 
@@ -269,7 +266,7 @@ Visit [SteamDeckGyroDSU](../../emudeck-application/steamos/emudeck-application-1
     * You may also connect an external keyboard and mouse
 2. Click the bluetooth icon in the bottom right of your taskbar and connect your controller
     * <img src="https://github.com/dragoonDorise/EmuDeck/assets/108900299/24945d4c-df06-4fbe-9668-7becea0c5edb" height="300">
-3. Open Citra
+3. Open Azahar
 4. Click `Emulation` at the top, click `Configure`
 5. Click `Controls` on the left
 6. Click `New` to the right of `Profile` and give it a unique name
@@ -277,7 +274,7 @@ Visit [SteamDeckGyroDSU](../../emudeck-application/steamos/emudeck-application-1
 8. To the right of `Motion Provider`, select `SDL` in the drop-down menu
 9. Click `Configure` and follow the instructions
 10. Click `OK`
-11. Click `OK` again and exit out of Citra
+11. Click `OK` again and exit out of Azahar
 12. Switch to `Game Mode`
 
 #### Game Mode
@@ -297,11 +294,11 @@ Visit [SteamDeckGyroDSU](../../emudeck-application/steamos/emudeck-application-1
 
 To restore the default Steam Deck controls:
 
-1. Open Citra
+1. Open Azahar
 2. Click `Emulation` at the top, click `Configure`
 3. Click `Controls` on the left
 4. To the right of `Profile`, select `SD-Default` in the drop-down menu
-5. Click `OK` and exit out of Citra
+5. Click `OK` and exit out of Azahar
 
 (Optional) To restore Steam Input:
 
@@ -317,20 +314,20 @@ To restore the default Steam Deck controls:
 ***
 
 ### How to Optimize Performance (Power Tools)
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 Visit [Power Tools](../../emudeck-application/steamos/emudeck-application-101.md#power-tools) to learn how to optimize performance using Power Tools. 
 
 ***
 
 ### How to Install Custom Textures
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
-Here's how to install custom textures for Citra:
+Here's how to install custom textures for Azahar:
 
-#### Citra Configuration
+#### Azahar Configuration
 
-1. In Desktop Mode, open Citra
+1. In Desktop Mode, open Azahar
 2. Click `Emulation` in the top left. Click `Configuration`, `Graphics`, and check both `Use Custom Textures` and `Async Custom Texture Loading`
     * <img src="https://user-images.githubusercontent.com/108900299/236593948-5a918187-27a7-4f5f-ac64-3b3147be8825.png" height="300">
 
@@ -338,12 +335,12 @@ Here's how to install custom textures for Citra:
 
 #### How to Install Custom Textures
 
-**Note:** Your texture pack may already come properly named and packaged with the correct `TitleID` and texture files. You may place the included texture pack folder directly into `/home/deck/.local/share/citra-emu/textures/`. You do not need the following section if this is the case.
+**Note:** Your texture pack may already come properly named and packaged with the correct `TitleID` and texture files. You may place the included texture pack folder directly into `/home/deck/.local/share/azahar-emu/textures/`. You do not need the following section if this is the case.
 
 1. In Desktop Mode, open [https://3ds.jdbye.com/?details=USA&split=0&display=0](https://3ds.jdbye.com/?details=USA&split=0&display=0) in a browser
 2. Note down the `Title ID` for the game
     * For example, The Legend of Zelda: Majora's Mask 3D's (US) Title ID is: `0004000000125500` 
-3. Open `/home/deck/.local/share/citra-emu/textures/`
+3. Open `/home/deck/.local/share/azahar-emu/textures/`
     * `~/.local` is a hidden folder by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders
 4. In the `textures` folder from Step 3, create a folder matching the `TitleID` from Step 2
 5. Put your texture files directly into the `TitleID` folder you created in Step 4
@@ -357,7 +354,7 @@ Here's how to install custom textures for Citra:
 ***
 
 ### How to Use Cheats
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 
 **Cheat Sources**
@@ -368,7 +365,7 @@ _This list is not exhaustive_
 
 #### How to Use Cheats
 
-1. In Desktop Mode, open Citra
+1. In Desktop Mode, open Azahar
 2. Right click a game of your choice, click `Properties`
     * <img src="https://user-images.githubusercontent.com/108900299/236593492-91df7ce3-efae-4bb7-a559-7c252637a2e4.png" height="300">
 3. Click the `Cheats` tab
@@ -382,37 +379,19 @@ _This list is not exhaustive_
 
 ***
 
-### How to Roll Back Citra to an Older Version
-[Back to the Top](#citra-table-of-contents)
+### How to Roll Back Azahar to an Older Version
+[Back to the Top](#azahar-table-of-contents)
 
-If you do not have access to a mouse and keyboard for the below section, use `L2` to right click and `R2` to left click. Alternatively, remote into your Steam Deck using one of the methods found in the FAQ, [How do I remotely control my Steam Deck?](../../frequently-asked-questions/steamos/index.md#how-do-i-remotely-control-my-steam-deck).
-
-1. In Desktop Mode, open `Konsole`
-2. To see a list of prior versions of the emulator, type:
-    * `flatpak remote-info --log flathub org.citra_emu.citra`
-3. If Konsole prompts you to select `system` or `user`, enter `2` to select `user` 
-4. Konsole will list a list of previous versions for the flatpak. The important line for each version is the `Commit: ` line. The `Commit: ` line will have a long accompanying alphanumeric string (the “commit” code). Copy the string for the version you want to downgrade to.
-    * ![How to Roll Back Flatpaks: 1](../../assets/how-to-roll-back-flatpaks-1.png) 
-5. To downgrade to the version you want:
-    * `flatpak update --commit=put_commit_code_here org.citra_emu.citra`
-    * Replace `put_commit_code_here` with the actual code you located in Step 2. 
-        * For example:
-            * ![How to Roll Back Flatpaks: 2](../../assets/how-to-roll-back-flatpaks-2.png)
-
-If the above steps did not work and you are getting an error message along the lines of `Flatpak not installed`, your Flatpak is likely installed at the system level instead. Select one of the below solutions:
-
-Solution 1: Open the EmuDeck application, click the `Manage Emulators` page, select the emulator in question, and click `Reinstall / Update`.
-
-Solution 2: Add `sudo` in front of the commands written in Step 2 and Step 5. In Step 2, write `sudo flatpak remote-info --log flathub org.citra_emu.citra` and in Step 5, write `sudo flatpak update --commit=put_commit_code_here org.citra_emu.citra`. 
+The Appimage executable for Azahar is stored in `Home/Applications`, replace this file with the version you intend to use from the releases page: [https://github.com/azahar-emu/azahar/releases](https://github.com/azahar-emu/azahar/releases)
 
 ***
 
 ### How to Configure Language Settings
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 #### UI
 
-1. In Desktop Mode, open Citra
+1. In Desktop Mode, open Azahar
 2. At the top, click `Emulation`, click `Configure`
 3. On the left hand-side of the screen, click `General`
 4. Click the `UI` tab
@@ -420,7 +399,7 @@ Solution 2: Add `sudo` in front of the commands written in Step 2 and Step 5. In
 
 #### In-Game
 
-1. In Desktop Mode, open Citra
+1. In Desktop Mode, open Azahar
 2. At the top, click `Emulation`, click `Configure`
 3. On the left hand-side of the screen, click `System`
 4. Click the `System` tab
@@ -429,18 +408,18 @@ Solution 2: Add `sudo` in front of the commands written in Step 2 and Step 5. In
 ***
 
 ## Custom Screen Layouts
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 ***
 
 ### How to Create Custom Screen Layouts
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 Use [https://jesuscc1993.github.io/miscellaneous/citra-layout-generator/](https://jesuscc1993.github.io/miscellaneous/citra-layout-generator/) to create custom layouts.
 
 After you have created your custom layout, use the following steps to use it. 
 
-1. Open the folder: `/home/deck/.config/citra-emu/`
+1. Open the folder: `/home/deck/.config/azahar-emu/`
     * `~/.config` is a hidden folder by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders
 2. Right click `qt-config.ini`, and click `Open with Kate` or a text editor of your choice
 3. Locate the `[Layout]` section
@@ -449,15 +428,15 @@ After you have created your custom layout, use the following steps to use it.
 ***
 
 ### How to Configure Bottom Screen as PiP
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 Credit: `NexLevel`
 
-Citra allows you to configure the bottom screen as a sort of PiP (Picture in Picture) overlay on the top screen, by editing the qt-config file. 
+Azahar allows you to configure the bottom screen as a sort of PiP (Picture in Picture) overlay on the top screen, by editing the qt-config file. 
 
 **Here's How**
 
-1. Open the folder: `/home/deck/.config/citra-emu/`
+1. Open the folder: `/home/deck/.config/azahar-emu/`
     * `~/.config` is a hidden folder by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders
 2. Right click `qt-config.ini`, and click `Open with Kate` or a text editor of your choice
 3. Locate the `[Layout]` section
@@ -508,7 +487,7 @@ Citra allows you to configure the bottom screen as a sort of PiP (Picture in Pic
                 
 
 5. (Optional) To move the PiP screen up, try setting `custom_top_top=0` and `custom_top_bottom=768`
-6. Save and exit out of the text file, Citra will now be using the bottom screen as PiP
+6. Save and exit out of the text file, Azahar will now be using the bottom screen as PiP
 
 **Note:** To revert back to defaults, the default `[Layout]` section is: 
 
@@ -560,11 +539,11 @@ upright_screen\default=true
 ***
 
 ### How to Configure Bottom Screen With PiP and Opacity
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 Credit: `NexLevel`
 
-A recent update of Citra allows the ability to set the opacity on the bottom screen. In combination with setting the bottom screen as a PiP overlay, you can create a Citra layout that looks like the following: 
+A previous update of Citra that Azahar has now used allows the ability to set the opacity on the bottom screen. In combination with setting the bottom screen as a PiP overlay, you can create a Azahar layout that looks like the following: 
 
 **Example 1:** <img src="https://user-images.githubusercontent.com/108900299/219829080-3e871ada-cde0-44b5-9781-0294a9a9fc7b.png" height="300">
 
@@ -572,7 +551,7 @@ A recent update of Citra allows the ability to set the opacity on the bottom scr
  
 **Here's How**
 
-1. Open the folder: `/home/deck/.config/citra-emu/`
+1. Open the folder: `/home/deck/.config/azahar-emu/`
     * `~/.config` is a hidden folder by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders
 2. Right click `qt-config.ini`, and click `Open with Kate` or a text editor of your choice
 3. Locate the `[Layout]` section
@@ -623,7 +602,7 @@ A recent update of Citra allows the ability to set the opacity on the bottom scr
          
 
 5. To adjust the PiP opacity, the opacity can be any integer between 1-100
-6. Save and exit out of the text file, Citra will now be using the bottom screen as PiP with custom opacity
+6. Save and exit out of the text file, Azahar will now be using the bottom screen as PiP with custom opacity
 
 **Note:** To revert back to defaults, the default `[Layout]` section is: 
 
@@ -674,7 +653,7 @@ upright_screen\default=true
 ***
 
 ### How to Configure Bottom Screen as PiP in the Top Right Corner
-[Back to the Top](#citra-table-of-contents)
+[Back to the Top](#azahar-table-of-contents)
 
 Picture: 
 
@@ -682,7 +661,7 @@ Picture:
 
 Credit: `busywait`
 
-1. Open the folder: `/home/deck/.config/citra-emu/`
+1. Open the folder: `/home/deck/.config/azahar-emu/`
     * `~/.config` is a hidden folder by default. In Dolphin (file manager), click the hamburger menu in the top right, click `Show Hidden Files` to see these folders
 2. Right click `qt-config.ini`, and click `Open with Kate` or a text editor of your choice
 3. Locate the `[Layout]` section
@@ -732,7 +711,7 @@ Credit: `busywait`
         upright_screen\default=true
          
 5. Save and close out of the text file
-6. Citra will now apply your custom layout
+6. Azahar will now apply your custom layout
 
 **Note:** To revert back to defaults, the default `[Layout]` section is: 
 
@@ -780,4 +759,83 @@ upright_screen=false
 upright_screen\default=true
 ```
 
+## Azahar's Online Features
+
+***
+### How to Set Up System Files
+
+* Make sure you have your Nintendo 3DS, as this process requires it.
+* To install New 3DS system software, you need to download Old 3DS software first, this is required for some situations (such as Pretendo Network), so it's best to download both.
+* The system used does not matter in this instance either, you can download New 3DS software with an old 3DS, and vice versa.
+
+1. Take out your SD Card and plug it into your PC.
+
+2. Download the Azahar Setup Tool from the respective GitHub page, and place it in your cia or 3ds folder on the SD card. [https://github.com/azahar-emu/ArticSetupTool/releases](https://github.com/azahar-emu/ArticSetupTool/releases)
+
+3. Insert your SD Card back into the Nintendo 3DS and power it on, launch the Setup Tool, instructions will vary depending on your chosen file.
+
+* If you used the .3ds, you need to launch it via the Homebrew Launcher.
+* If you used the .cia, you need to install it with FBI.
+
+4. Press A to start the setup tool, you will be given a local IP address once completed.
+
+5. Launch Azahar, then File > Setup System Files, you will be prompted for a local IP address, type in the address displayed on the 3DS, and press OK.
+
+6. You will be taken to the System Update screen if everything was done correctly, follow the prompts and wait for it to update.
+
+7. Once successfully updated, confirm the update.
+
+You should now have your system files ready to go.
+***
+
+### How to Set Up your Nintendo Network ID
+
+* Do note this process may make you unable to access certain features of Pretendo Network, such as Miiverse.
+* This process requires atleast Old 3DS system software files, if you have not already done so, you can do so with the instructions in the [How To Set Up System Files](#how_to_setup_system_files) tab.
+
+1. Download ThreeSD from the respective GitHub page and for your OS: https://github.com/zhaowenlan1779/threeSD/releases/tag/v0.5.4
+
+2. Insert your 3DS SD Card into your computer and in the dist folder of the ThreeSD zip, copy the threeSDDumper.gm9 into your gm9/scripts folder on your SD Card. Eject the SD Card and put it back into your Nintendo 3DS.
+
+3. Launch GodMode9 by holding the Start button then powering the Nintendo 3DS on.
+
+4.  Press the Home Button, Scripts, and then execute the threeSDDumper script. Once it is done, power off your 3DS and put the SD Card back into your PC and launch the threeSD executable.
+
+5. After that click your SD card and then check everything off but "Ungrouped", then transfer the data. This data gets saved to the CITRA user save directory, not Azahar, so you need to locate this directory and put those files into the Azahar directory instead.
+
+* for SteamOS and most Linux distros, it's located in `Home/.local/share`, but you can also locate it by launching Azahar and going to File > Open Azahar Directory, then go back one folder.
+
+6. Next, you need to link your NNID, make sure you have your ID, password, and email ready.
+
+7. Launch Azahar, go into Emulation > Configure, then the System tab, and enable required LLE modules for online features.
+
+8. Boot the Home Menu by going to File > Boot Home Menu > (Region of your Nintendo 3DS).
+   
+9.  Launch the System Settings app, Nintendo Network ID Settings, then follow the prompts until you are at the screen that either says `Existing ID` Or `Create New ID`, you want to hit the `Existing ID` button.
+
+10. Type in your ID, Password, and email associated with the NNID.
+
+After following the prompts, you should now have access to the Nintendo EShop or Pokémon Bank.
+
+
+***
+
+### How to Set Up Pretendo Network
+
+* This process requires both the old and New 3DS system software files, if you have not already done so, you can do so with the instructions in the [How To Set Up System Files](#how_to_setup_system_files) tab.
+* Do note that if you have a NNID installed for usage of Pokémon Bank or the Nintendo EShop, you may not be able to use features that require an ID via Pretendo Network, which right now, is Miiverse.
+
+1. Download the .cia version of Nimbus from the respective github. [https://github.com/PretendoNetwork/nimbus/releases](https://github.com/PretendoNetwork/nimbus/releases)
+
+2. Launch Azahar, go to File > Open Azahar Folder, and move both the luma and 3ds folder into the sdmc folder.
+
+3. Back to Azahar, go to File > Install CIA, select the Nimbus.cia file, and it should now be installed.
+
+4. Go to Emulation > Configure, then the System tab, you need to enable the required LLE modules for online features, this should be at the top of the System Settings section.
+
+5. Afterwards, boot into the home menu by going to File > Boot Home Menu > (Region of your Nintendo 3DS).
+
+6. Run the newly installed Nimbus program, and select Pretendo, it should take you back to the Home Menu.
+
+You should now have access to the Pretendo Network.
 ***
